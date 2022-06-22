@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+:root {
+    --light-shadow: 0px 0px 10px 3px lightgrey;
+    --tiktok-magenta: rgba(238, 29, 82, 0.9);
+    --tiktok-cyan: rgb(105, 201, 208);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--tiktok-magenta);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: var(--light-shadow);
+}
+
+.my-videos {
+    position: absolute;
+    right: 10rem;
+}
+
+main {
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    background: linear-gradient(135deg, #ee1d52, #69c9d0);
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: var(--light-shadow);
+    padding: 5rem;
+}
+
+.heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-label {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.input-placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: solid var(--tiktok-cyan) 2px;
+    margin-top: 0.5rem;
+}
+
+.continue {
+    width: 10rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    header {
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .box {
+        width: 50%;
+        min-width: 17rem;
+        margin: 0 5rem;
+    }
+
+    .my-videos {
+        position: static;
+    }
+
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    .box {
+        width: 20rem;
+        padding: 4rem 2rem;
+    }
+    .input-label {
+        margin-top: 1rem;
+    }
+    .input-placeholder {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .button {
+        border-radius: 1.2rem;
+    }
+
+}
+
+/* Connect Page Styling */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submain {
+    margin-top: 18rem;
+    margin-bottom: 2rem;
+
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.colored {
+    margin-left: 0.7rem;
+    color: var(--tiktok-magenta);
+}
